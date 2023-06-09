@@ -1,6 +1,7 @@
 :root {
-    --primary-color: #f1c822; /* Define a cor primária como amarelo (#F4CE01) */
-    --secondary-color: #19191d; /* Define a cor secundária como preto (#0F0F0B) */
+    --primary-color: #00BFFF; /* Definindo a cor primária como azul claro */
+    --secondary-color: #F5F5F5; /* Definindo a cor secundária como branco */
+    --accent-color: #F5F5DC; /* Definindo a cor de destaque como bege claro */
 }
 
 * {
@@ -10,67 +11,67 @@
 }
 
 html {
-    font-size: 62.5%; /* Define o tamanho da fonte base como 62.5% (equivalente a 10px em relação à escala rem) */
+    font-size: 62.5%; /* Definindo o tamanho da fonte base em 10px para facilitar o cálculo */
 }
 
 body {
-    background-color: var(--primary-color); /* Define a cor de fundo como a cor primária */
-    font: bold 2rem 'Open Sans', sans-serif; /* Define a fonte como 'Open Sans', negrito, tamanho de 2rem */
+    background-color: var(--primary-color); /* Definindo o fundo do corpo como a cor primária (azul claro) */
+    font: bold 2rem 'Open Sans', sans-serif; /* Definindo a fonte do corpo */
 }
 
 .todo {
     display: flex;
-    width: 50vw; /* Define a largura como 50% da largura da viewport */
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    gap: 15px;
+    width: 50vw; /* Definindo a largura da área de tarefas como 50% da largura da viewport */
+    flex-direction: column; /* Alinhando as tarefas verticalmente */
+    align-items: center; /* Centralizando as tarefas horizontalmente */
+    margin: 0 auto; /* Centralizando o bloco de tarefas na página */
+    gap: 15px; /* Adicionando espaçamento entre as tarefas */
 }
 
 .todo__title {
     display: flex;
-    background-color: var(--secondary-color); /* Define a cor de fundo como a cor secundária */
+    background-color: var(--secondary-color); /* Definindo o fundo do título como a cor secundária (branco) */
     width: 100%;
     height: 80px;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    box-shadow: 1px 1px 5px var(--secondary-color); /* Adiciona uma sombra na caixa com base na cor secundária */
-    font-size: 3rem;
-    color: var(--primary-color); /* Define a cor do texto como a cor primária */
+    margin-top: 50px; /* Adicionando espaço entre o topo da página e o título */
+    box-shadow: 1px 1px 5px var(--accent-color); /* Adicionando uma sombra ao título usando a cor de destaque (bege claro) */
+    font-size: 3rem; /* Definindo o tamanho da fonte do título */
+    color: var(--primary-color); /* Definindo a cor do texto como a cor primária (azul claro) */
 }
 
 .todo__list {
     display: flex;
     width: 100%;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Alinhando as tarefas verticalmente */
+    gap: 10px; /* Adicionando espaçamento entre as tarefas */
 }
 
-.todo__item{
+.todo__item {
     display: flex;
     width: 100%;
     height: 60px;
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    box-shadow: 1px 1px 5px var(--secondary-color); /* Adiciona uma sombra na caixa com base na cor secundária */
+    box-shadow: 1px 1px 5px var(--accent-color); /* Adicionando uma sombra aos itens usando a cor de destaque (bege claro) */
 }
 
 .todo__item > div {
-    width: 80%;
+    width: 80%; /* Definindo a largura do texto da tarefa */
 }
 
 .todo__item:hover {
     cursor: pointer;
     transition: all .5s ease;
-    background-color: var(--secondary-color); /* Define a cor de fundo como a cor secundária ao passar o mouse */
-    color: var(--primary-color); /* Define a cor do texto como a cor primária ao passar o mouse */
+    background-color: var(--secondary-color); /* Alterando o fundo do item em destaque para a cor secundária (branco) */
+    color: var(--primary-color); /* Alterando a cor do texto do item em destaque para a cor primária (azul claro) */
 }
 
 .todo__item > input[type='text'] {
     border: none;
-    width: 80%;
+    width: 80%; /* Definindo a largura do campo de texto da tarefa */
     font: inherit;
 }
 
@@ -81,26 +82,26 @@ body {
     font: inherit;
 }
 
-.todo__item > input[type='checkbox']:checked  + div {
-    text-decoration:line-through; /* Adiciona uma linha atravessando o texto quando a caixa de seleção está marcada */
+.todo__item > input[type='checkbox']:checked + div {
+    text-decoration: line-through; /* Adicionando uma linha de texto riscado aos itens marcados como concluídos */
 }
 
-.todo__new-item{
+.todo__new-item {
     display: flex;
-    background-color: #f3a618; /* Define a cor de fundo como um tom claro de amarelo (#fff59d) */
+    background-color: var(--accent-color); /* Definindo o fundo do novo item como a cor de destaque (bege claro) */
     width: 100%;
     height: 70px;
     justify-content: space-evenly;
     padding: 10px 0;
-    box-shadow: 1px 1px 5px var(--secondary-color); /* Adiciona uma sombra na caixa com base na cor secundária */
-    margin: 10px;
+    box-shadow: 1px 1px 5px var(--accent-color); /* Adicionando uma sombra ao novo item usando a cor de destaque (bege claro) */
+    margin: 10px; /* Adicionando espaçamento entre o novo item e as tarefas */
     font: inherit;
 }
 
-.todo__new-item > input{
-    background-color: #ecd507; /* Define a cor de fundo como um tom claro de amarelo (#fff59d) */
+.todo__new-item > input {
+    background-color: var(--accent-color); /* Definindo o fundo do campo de texto do novo item como a cor de destaque (bege claro) */
     border: none;
-    width: 80%;
+    width: 80%; /* Definindo a largura do campo de texto do novo item */
     outline: none;
     font: inherit;
 }
