@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #00BFFF; /* Definindo a cor primária como azul claro */
-    --secondary-color: #F5F5F5; /* Definindo a cor secundária como branco */
-    --accent-color: #F5F5DC; /* Definindo a cor de destaque como bege claro */
+    --primary-color: #a19898; /* Definindo a cor primária como azul claro */
+    --secondary-color: #ee6e6e; /* Definindo a cor secundária como branco */
+    --accent-color: #fd6565; /* Definindo a cor de destaque como bege claro */
 }
 
 * {
