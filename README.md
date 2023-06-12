@@ -8,10 +8,10 @@ Este é um projeto de uma lista de tarefas simples, onde você pode adicionar, r
 
 - Adicionar uma nova tarefa pressionando a tecla Enter.
 ![Alt text](image-1.png)
-- Remover uma tarefa clicando no botão "X".
-![Alt text](image-3.png)
 - Marcar uma tarefa como concluída clicando na caixa de seleção.
 ![Alt text](image-2.png)
+- Remover uma tarefa clicando no botão "X".
+![Alt text](image-3.png)
 ## Tecnologias Utilizadas
 
 - HTML
